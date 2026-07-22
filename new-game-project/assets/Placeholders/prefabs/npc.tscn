@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://cjbalvyt76ek"]
+
+[ext_resource type="Texture2D" uid="uid://bswecr5s1nldh" path="res://assets/Placeholders/sprites/Untitled116_20260723094214.png" id="1_x5vn7"]
+
+[node name="NPC" type="Sprite2D" unique_id=1975116905]
+position = Vector2(431, 399)
+scale = Vector2(0.14375, 0.14375)
+texture = ExtResource("1_x5vn7")

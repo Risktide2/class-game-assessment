@@ -1,0 +1,47 @@
+[gd_scene format=3 uid="uid://cuxqrgwj4psmk"]
+
+[ext_resource type="Texture2D" uid="uid://bcyan4estlft0" path="res://assets/Placeholders/sprites/Untitled114_20260721093704.png" id="2_048j7"]
+[ext_resource type="Texture2D" uid="uid://uk4o3dwsnt3u" path="res://assets/Placeholders/sprites/Untitled114_20260721093713.png" id="3_gs0h4"]
+[ext_resource type="PackedScene" uid="uid://cjbalvyt76ek" path="res://assets/Placeholders/prefabs/npc.tscn" id="4_048j7"]
+[ext_resource type="PackedScene" uid="uid://denrwsqhy3nvc" path="res://assets/Placeholders/prefabs/ui.tscn" id="5_gs0h4"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ooswt"]
+atlas = ExtResource("2_048j7")
+region = Rect2(0, 0, 1969, 1969)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_u6r6o"]
+atlas = ExtResource("3_gs0h4")
+region = Rect2(0, 0, 1969, 1969)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_kfwet"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ooswt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_u6r6o")
+}],
+"loop": true,
+"name": &"default",
+"speed": 2.0
+}]
+
+[node name="Node2D" type="Node2D" unique_id=1022317957]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=2000781027]
+position = Vector2(582.5, 308.5625)
+scale = Vector2(0.5977654, 0.33360848)
+sprite_frames = SubResource("SpriteFrames_kfwet")
+autoplay = "default"
+frame_progress = 0.14093705
+
+[node name="NPC" parent="." unique_id=1975116905 instance=ExtResource("4_048j7")]
+position = Vector2(557, 377.00003)
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=54198140]
+position = Vector2(583, 303)
+
+[node name="UI" parent="." unique_id=1897700261 instance=ExtResource("5_gs0h4")]
+position = Vector2(1045, 79.00006)
+scale = Vector2(0.23500016, 0.23500016)

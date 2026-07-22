@@ -1,0 +1,63 @@
+[gd_scene format=3 uid="uid://denrwsqhy3nvc"]
+
+[ext_resource type="Texture2D" uid="uid://d0npoofmmxrqe" path="res://assets/Placeholders/sprites/Untitled117_20260723100440.png" id="1_ih3c1"]
+[ext_resource type="Texture2D" uid="uid://bov2fkvtk6qgs" path="res://assets/Placeholders/sprites/Untitled117_20260723100448.png" id="2_bh877"]
+[ext_resource type="Texture2D" uid="uid://16ilgga1fyvg" path="res://assets/Placeholders/sprites/Untitled119_20260723102219.png" id="3_ffny7"]
+[ext_resource type="Texture2D" uid="uid://dojwcfe688lup" path="res://assets/Placeholders/sprites/Untitled119_20260723102234.png" id="4_3xbka"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ffny7"]
+atlas = ExtResource("1_ih3c1")
+region = Rect2(0, 0, 800, 800)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3xbka"]
+atlas = ExtResource("2_bh877")
+region = Rect2(0, 0, 800, 800)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_bh877"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ffny7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3xbka")
+}],
+"loop": true,
+"name": &"default",
+"speed": 2.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ijyuc"]
+atlas = ExtResource("3_ffny7")
+region = Rect2(0, 0, 800, 800)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_evkco"]
+atlas = ExtResource("4_3xbka")
+region = Rect2(0, 0, 800, 800)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_sho1v"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ijyuc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_evkco")
+}],
+"loop": true,
+"name": &"default",
+"speed": 2.0
+}]
+
+[node name="UI" type="AnimatedSprite2D" unique_id=1897700261]
+position = Vector2(-5.9604645e-08, 2.3841858e-07)
+scale = Vector2(0.3875, 0.3875)
+sprite_frames = SubResource("SpriteFrames_bh877")
+autoplay = "default"
+frame_progress = 0.12898989
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=2114420941]
+position = Vector2(-18.064545, 701.9354)
+scale = Vector2(1.0516127, 1.0516127)
+sprite_frames = SubResource("SpriteFrames_sho1v")
+frame_progress = 0.57127196
